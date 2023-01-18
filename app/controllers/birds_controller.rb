@@ -2,8 +2,10 @@ class BirdsController < ApplicationController
     # READ
     # get "/birds", to: "birds#index"
     def index
-        byebug
-        # bird = Bird.all
+        bird = Bird.all
+        render json: bird
+        # byebug
+    
     end
 
 end
